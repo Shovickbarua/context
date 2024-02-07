@@ -1,7 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
+import { useContext } from 'react';
+import UserContext from './UserContext';
 
 function App() {
+  const {setUser} = useContext(UserContext);
   return (
     <div className="App">
       <header className="App-header">
